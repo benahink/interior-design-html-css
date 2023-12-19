@@ -70,7 +70,7 @@ nav {
 .header {
   margin-bottom: 10rem;
   background-image: url(images/header.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -146,4 +146,108 @@ nav {
   max-width: 400px;
   outline: 2px solid var(--text-light);
   outline-offset: 1rem;
+}
+.banner {
+  padding: 10rem 0;
+  background-image: url(images/banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner__container {
+  text-align: center;
+  color: var(--white);
+  font-family: var(--header-font);
+}
+.banner__container h4 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.banner__container p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.display__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.display__col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.display__content {
+  padding: 4rem 0;
+  flex: 1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: var(--header-font);
+  color: var(--text-dark);
+}
+.display__col:nth-child(1) .display__content, 
+.display__col:nth-child(3) .display__content {
+  background-color: #edeae3;
+}  
+.display__col:nth-child(2) .display__content {
+  background-color: #daddd6;
+}
+.display__content h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.display__content p {
+  font-style: italic;
+}
+.footer {
+  margin-top: 2rem;
+  position: relative;
+  background-color: var(--primary-color);
+
+}
+.footer__container {
+  text-align: center;
+}
+.footer__container img {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(50%);
+  max-width: 150px;
+}
+.footer__container h4 {
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+}
+.footer__container p {
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+.footer__container button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  background-color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer__container button:hover {
+  color: var(--text-dark);
+}
+.footer__bar {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-light);
 }
