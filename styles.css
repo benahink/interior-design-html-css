@@ -272,6 +272,9 @@ nav {
   .link {
     display: none;
   }
+  .header {
+    margin-bottom: 2rem;
+  }
   .header__content {
     margin-bottom: 20rem;
   }
